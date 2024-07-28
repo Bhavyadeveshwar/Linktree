@@ -1,54 +1,52 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "../../../utils/cn"; // Adjust the import path as needed
-import Logo from "../../../assets/logowhite.png"
+import Logo from "../../../assets/logowhite.png";
 
 export function LampDemo() {
   return (
     <div className=" ">
-    <LampContainer className=""> 
-      
-      <motion.h1
-        initial={{ opacity: 0.5, y: 140 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.3,
-          duration: 0.8,
-          ease: "easeInOut",
-        }}
-        className="-mb-72 bg-gradient-to-br from-slate-300 to-slate-500 px-4 bg-clip-text text-center tracking-tight text-transparent md:text-7xl  ">
-      <div className="mt-64 "> 
-      <div className="flex justify-center items-center"><img src={Logo} alt="" className="w-80 h-80 "  /> </div>
-      
-      <h1 className="text-9xl font-bold text-center text-white  ">The Ace'2024</h1>
-        <div className="gap-y-20">
-        <p className="text-4xl   text-white ">The Craziest Event in Delhi NCR</p> 
-  <p className="text-7xl font-mono text-white">Happening in <span className="text-purple-300">August</span></p>
-         
-        </div>
+      <LampContainer className="">
+        <motion.h1
+          initial={{ opacity: 0.5, y: 140 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.3,
+            duration: 0.8,
+            ease: "easeInOut",
+          }}
+          className="-mb-44 bg-gradient-to-br from-slate-300 to-slate-500 px-4 bg-clip-text text-center tracking-tight text-transparent md:text-7xl  "
+        >
+          <div className="mt-28 font-Bruno">
+            <div className="flex justify-center items-center">
+              <img src={Logo} alt="" className="w-80 " />{" "}
+            </div>
 
-        
-        
-        
-
-       
-        </div>
-      </motion.h1>
-    </LampContainer>
+            <h1 className="text-9xl font-bold text-center text-white font-Bruno">
+              The ACE'24
+            </h1>
+            <div className="gap-y-20">
+              <p className="text-4xl text-white ">
+                The Craziest Event in Delhi NCR
+              </p>
+              <p className="text-4xl font-Montserrat text-white">
+                Happening in <span className="text-purple-300">August</span>
+              </p>
+            </div>
+          </div>
+        </motion.h1>
+      </LampContainer>
     </div>
-    
   );
 }
 
 export const LampContainer = ({ children, className }) => {
   return (
-    
     <div
       className={cn(
         "relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-slate-950 w-full rounded-md z-0",
         className
       )}
-      
     >
       <div className="relative flex w-full flex-1 scale-y-125 items-center justify-center isolate z-0">
         <motion.div
@@ -57,7 +55,7 @@ export const LampContainer = ({ children, className }) => {
           transition={{
             delay: 0.3,
             duration: 2,
-            ease: "easeInOut", 
+            ease: "easeInOut",
           }}
           style={{
             backgroundImage: `conic-gradient(var(--conic-position), var(--tw-gradient-stops))`,
@@ -112,10 +110,7 @@ export const LampContainer = ({ children, className }) => {
 
       <div className="relative z-50 flex -translate-y-80 flex-col items-center px-5">
         {children}
-        
       </div>
     </div>
-    
-    
   );
 };
