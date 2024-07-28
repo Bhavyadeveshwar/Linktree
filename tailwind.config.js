@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        'sans': ['Bruno', 'sans-serif'],
+        'Bruno': ['Bruno Ace', 'sans-serif'],
+        'Montserrat': ['Montserrat', 'sans-serif'],
       }
     },
   },
