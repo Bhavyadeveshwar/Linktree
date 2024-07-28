@@ -5,26 +5,26 @@ import Logo from "../../../assets/logowhite.png"
 
 export function LampDemo() {
   return (
-    <div className="">
-    <LampContainer>
+    <div className=" ">
+    <LampContainer className=""> 
       
       <motion.h1
-        initial={{ opacity: 0.5, y: 100 }}
+        initial={{ opacity: 0.5, y: 140 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.3,
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="-mt-40 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl "
-        
-      >
-      <div className=""> 
-        <img src={Logo} alt="" className="w-40 ml-28 mt-32  " /> 
-        <div className="font-lg text-gray-400">The Ace'2024 <br /></div>
-        <div>
-        <p className="text-xl font-mono text-white"><br />The    Craziest   Event   in   Delhi   NCR <br /></p>
-        <p className="text-3xl font-mono text-white">Happening in <span className="text-purple-300">August</span> </p>
+        className="-mb-72 bg-gradient-to-br from-slate-300 to-slate-500 px-4 bg-clip-text text-center tracking-tight text-transparent md:text-7xl  ">
+      <div className="mt-64 "> 
+      <div className="flex justify-center items-center"><img src={Logo} alt="" className="w-80 h-80 "  /> </div>
+      
+      <h1 className="text-9xl font-bold text-center text-white  ">The Ace'2024</h1>
+        <div className="gap-y-20">
+        <p className="text-4xl   text-white ">The Craziest Event in Delhi NCR</p> 
+  <p className="text-7xl font-mono text-white">Happening in <span className="text-purple-300">August</span></p>
+         
         </div>
 
         
@@ -80,7 +80,7 @@ export const LampContainer = ({ children, className }) => {
           }}
           className="absolute inset-auto left-1/2 h-56 w-[30rem] bg-gradient-conic from-transparent via-transparent to-purple-500 text-white [--conic-position:from_290deg_at_center_top]"
         >
-          <div className="absolute w-40 h-[100%] right-0 bg-slate-950 bottom-0 z-20 [mask-image:linear-gradient(to_left,white,transparent)]" />
+          <div className="absolute w-60 h-[100%] right-0 bg-slate-950 bottom-0 z-20 [mask-image:linear-gradient(to_left,white,transparent)]" />
           <div className="absolute w-[100%] right-0 bg-slate-950 h-40 bottom-0 z-20 [mask-image:linear-gradient(to_top,white,transparent)]" />
         </motion.div>
         <div className="absolute top-1/2 h-48 w-full translate-y-12 scale-x-150 bg-slate-950 blur-2xl"></div>
