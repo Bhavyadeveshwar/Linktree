@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "../../../utils/cn"; // Adjust the import path as needed
-import Logo from "../../../assets/logowhite.png";
+
 
 export function LampDemo() {
   return (
@@ -18,19 +18,19 @@ export function LampDemo() {
           className="-mb-44 bg-gradient-to-br from-slate-300 to-slate-500 px-4 bg-clip-text text-center tracking-tight text-transparent md:text-7xl  "
         >
           <div className="mt-28 font-Bruno">
-            <div className="flex justify-center items-center">
-              <img src={Logo} alt="" className="w-80 " />{" "}
+            <div className="flex justify-center items-center text-3xl">
+              <p>Meanieee Engineer</p>
             </div>
 
-            <h1 className="text-9xl font-bold text-center text-white font-Bruno">
-              The ACE'24
+            <h1 className="text-8xl font-bold text-center text-white font-Bruno">
+              Bhavya Deveshwar
             </h1>
             <div className="gap-y-20">
               <p className="text-4xl text-white ">
-                The Craziest Event in Delhi NCR
+                <br />Web Developer // Software Developer
               </p>
               <p className="text-4xl font-Montserrat text-white">
-                Happening in <span className="text-purple-300">August</span>
+                DON't <span className="text-purple-300">connect</span>
               </p>
             </div>
           </div>
