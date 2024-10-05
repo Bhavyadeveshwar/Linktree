@@ -19,11 +19,11 @@ export function LampDemo() {
         >
           <div className="mt-28 font-Bruno">
             <div className="flex justify-center items-center text-3xl">
-              <p>Meanieee Engineer</p>
+              <p>Meaniee Engineer</p>
             </div>
 
-            <h1 className="text-8xl font-bold text-center text-white font-Bruno">
-              Bhavya Deveshwar
+            <h1 className="text-8xl font-bold text-center text-gray-200 font-Bruno">
+              Bhavya Deveshwar 
             </h1>
             <div className="gap-y-20">
               <p className="text-4xl text-white ">
